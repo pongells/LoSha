@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
-	<item android:id="@+id/start_location_sharing" android:title="@string/start_location_sharing"/>
-	<item android:id="@+id/stop_location_sharing" android:title="@string/stop_location_sharing"/>
-	<item android:id="@+id/set_avatar" android:title="@string/set_avatar"/>
-</menu>
