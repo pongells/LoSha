@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  xmlns:losha= "http://schemas.android.com/apk/res/ch.usi.inf.bp.losha"
+			    android:orientation="vertical"
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent">
+   
+    <LinearLayout style="@style/TitleBar">
+        <ImageButton style="@style/TitleBarAction"
+            android:src="@drawable/title_home"
+            android:onClick="onHomeClick" />
+            
+        <ImageView style="@style/TitleBarSeparator" />
+        <TextView style="@style/TitleBarText" android:id="@+id/title_text"/>
+	</LinearLayout>
+    
+	<ScrollView
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:fillViewport="true" 
+			android:id="@+id/scrollView">
+	
+		<LinearLayout android:layout_width="fill_parent"
+					  android:layout_height="fill_parent"
+					  android:orientation="vertical">
+				  
+			<ImageView android:src="@drawable/logo_test3" 
+					   android:layout_width="wrap_content"
+					   android:layout_height="wrap_content"
+					   android:scaleType="fitStart"
+					   android:id="@+id/usi"
+					   android:paddingTop="@dimen/padding"
+					   android:paddingBottom="@dimen/padding"
+					   android:layout_gravity="center_horizontal"/>
+					  
+			<ch.usi.inf.bp.losha.utils.SectionLabel
+				android:id="@+id/version"
+				android:layout_width="fill_parent"
+	   			android:layout_height="wrap_content"
+	   			losha:text="@string/app_name" />
+	   		<!--losha:extra_text="@string/version"/> -->
+	   		
+	   		<TextView android:layout_width="fill_parent"
+	   			android:layout_height="wrap_content"
+	   			android:padding="@dimen/padding"
+	   			android:gravity="fill_horizontal"
+	   			android:text="@string/about_losha"/>
+		
+			<TextView android:layout_width="fill_parent"
+	   			android:layout_height="wrap_content"
+	   			android:padding="@dimen/padding"
+	   			android:gravity="fill_horizontal"
+	   			android:text="@string/about_losha_xmpp"/>
+		
+			<ch.usi.inf.bp.losha.utils.SectionLabel
+	   			android:layout_width="fill_parent"
+	   			android:layout_height="wrap_content"
+	   			android:layout_marginTop="@dimen/padding"
+	   			losha:text="@string/credits" />
+	   		
+			<TableLayout
+				  android:layout_width="fill_parent" 
+				  android:layout_height="wrap_content"
+				  android:stretchColumns="2">
+				  
+				<TableRow android:padding="@dimen/padding">
+					<TextView 
+						android:layout_width="wrap_content"
+				   		android:layout_height="wrap_content"
+				   		android:text="@string/author"
+				   		android:layout_column="1"
+				   		android:paddingRight="@dimen/padding"/>
+				   	<TextView 
+				   		android:id="@+id/author_name"
+						android:layout_width="wrap_content"
+				   		android:layout_height="wrap_content"
+				   		android:text="@string/author_text"/>
+				</TableRow>
+				<TableRow android:padding="@dimen/padding">
+					<TextView 
+						android:layout_width="wrap_content"
+				   		android:layout_height="wrap_content"
+				   		android:text="@string/professor"
+				   		android:layout_column="1"
+				   		android:paddingRight="@dimen/padding"/>
+				   	<TextView 
+				   		android:id="@+id/professor_name"
+						android:layout_width="wrap_content"
+				   		android:layout_height="wrap_content"
+				   		android:text="@string/professor_text"
+				   		android:layout_gravity="left"/>
+				</TableRow>
+				<TableRow android:padding="@dimen/padding">
+					<TextView 
+						android:layout_width="wrap_content"
+				   		android:layout_height="wrap_content"
+				   		android:text="@string/supervisor"
+				   		android:layout_column="1"
+				   		android:paddingRight="@dimen/padding"/>
+				   	<TextView 
+				   		android:id="@+id/supervisor_name"
+						android:layout_width="wrap_content"
+				   		android:layout_height="wrap_content"
+				   		android:text="@string/supervisor_text"
+				   		android:layout_gravity="left"/>
+				</TableRow>
+				
+			</TableLayout>
+			
+			<ch.usi.inf.bp.losha.utils.SectionLabel
+	   			android:layout_width="fill_parent"
+	   			android:layout_height="wrap_content"
+	   			android:layout_marginTop="@dimen/padding"
+	   			losha:text="@string/libs" />
+	   		
+			<WebView 
+		        android:id="@+id/webview"
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent" />
+		        
+		</LinearLayout>
+		
+	</ScrollView>
+</LinearLayout>

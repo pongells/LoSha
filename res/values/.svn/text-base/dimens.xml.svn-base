@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <dimen name="title_height">45dip</dimen>
+	<dimen name="logo_height">35dip</dimen>
+	
+	<dimen name="padding">6dip</dimen>
+	<dimen name="padding_big">12dip</dimen>
+
+    <dimen name="inset">8dip</dimen>
+    <dimen name="size">64dip</dimen>
+    
+    <dimen name="text_size_small">14sp</dimen>
+    <dimen name="text_size_medium">18sp</dimen>
+    <dimen name="text_size_large">22sp</dimen>
+    
+    <dimen name="list_group_text_size">15sp</dimen>
+    <dimen name="list_group_padding">2dip</dimen>
+    <dimen name="list_group_margin_left">5dip</dimen>
+</resources>

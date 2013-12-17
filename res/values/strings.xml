@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- Generic -->
+	<string name="version">$Rev: 151 $</string>
+    <string name="app_name">LoSha</string>
+    <string name="app_title">LoSha (Beta)</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="connected">Connected</string>
+    <string name="error">Error</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="not_connected_title">Not Connected</string>
+    <string name="not_connected_mex">You need to be connected. Connect?</string>
+
+	<!-- Errors -->
+	<string name="err_not_empty">This must not be empty.</string>
+	<string name="err_not_positive_integer">This must be a positive integer.</string>
+	<string name="err_nan">This must be a valid number.</string>
+	
+ 
+	<!-- About Activity -->
+	<string name="credits">Credits</string>
+	<string name="libs">Libraries and Tools</string>
+	  	<string name="about_title">About</string>
+  	<string name="about_losha">
+  		This application is part of \"An Experimental Location Sharing Platform\", 
+  		a bachelor thesis project carried out during the spring semester 2011 at the University of Lugano.
+  	</string>
+  	<string name="about_losha_xmpp">
+  		It is based on XMPP technologies, in particular the Publish-Subscribe extension. 
+  		It uses a custom XMPP component (server side) to manage location sharing groups and subscriptions.
+  	</string>
+  	<string name="author">Author:</string>
+  	<string name="author_text">Stefano Pongelli\n&lt;stefano.pongelli@usi.ch&gt;</string>
+  	<string name="professor">Professor:</string>
+  	<string name="professor_text">Marc Langheinrich\n&lt;marc.langheinrich@usi.ch&gt;</string>
+  	<string name="supervisor">Supervisor:</string>
+  	<string name="supervisor_text">Marcello Paolo Scipioni\n&lt;marcello.paolo.scipioni@usi.ch&gt;</string>
+
+	
+	<!-- Create Node -->
+    <string name="create_node_title">New Group</string>
+	<string name="losha_node">Location Sharing Group</string>
+    <string name="create_losha_node">Create Group</string>
+    
+  	<string name="create_node_intro">
+  		A group is a sharing point of your location.\nIn its basic form, 
+  		it is composed of a title and a granularity (location that one will see).
+  	</string>
+  	<string name="create_node_name">Title</string>
+  	<string name="create_node_title_ex">e.g. \"Close friends\"</string>
+  	<string name="create_node_granularity">Granularity</string>
+  	<string name="create_node_gran_prompt">Choose a granularity</string>
+  	<string name="create_node_gran_desc">
+		Friends registered to this group will see your location at %s.
+	</string>
+	 <string name="create_node_gran_desc_custom">
+		Friends registered to this group will see your location at %1$s (%2$s meters).
+	</string>
+	<string name="create_node_gran_meters">
+		Input a radius in meters.
+	</string>
+  	<string name="create_node_meters">Meters:</string>
+  	
+  	
+  	<!-- Edit node -->
+  	<string name="edit_node_title">Edit Group</string>
+  	<string name="create_node_geoloc_intro">
+  		Here you can choose to share this group\'s location only when you are in a specific area.
+  		\nYou can set a location and a radius to it.
+  	</string>
+  	<string name="create_node_location">Location</string>
+  	<string name="create_node_radius">Radius</string>
+  	<string name="delete_node">Delete Group</string>
+  	<string name="delete_node_mex">Do you really want to delete this group?</string>
+  	
+  	
+  	
+	<!-- friend list activity -->
+    <string name="friends_title">Friends</string>
+    <string name="friends_group_blocked">Not sharing</string>
+    <string name="friends_group_new">New contacts</string>
+    <string name="friends_group_empty">You have no friends..</string>
+    <string name="friends_group_notif_empty">Nothing new to show..</string>
+    <string name="friends_group_notif_pending">Pending requests</string>
+    <string name="friends_group_notif_incoming">Incoming requests</string>
+  	
+  	
+  	<!-- friend list activity menu -->
+    <string name="add_friend">Add Friend</string>
+    <string name="refresh_friends">Refresh</string>
+    
+  	
+  	 <!-- friend profile activity -->
+    <string name="friend_profile_title">Friend</string>
+    <string name="profile_title">Profile</string>
+    <string name="location_title">Location</string>
+    <string name="sharing_node_title">Sharing Group</string>
+	<string name="block_friend_title">Block Friend</string>
+	<string name="remove_friend_title">Remove Friend</string>
+    <string name="remove_friend_mex">Do you really want to remove this friend?</string>
+	<string name="friend_node_prompt">Choose a group</string>
+	<string name="friend_added">Friend added!</string>
+	<string name="select_group_desc">
+		This contact will see your location at %s.
+	</string>
+	<string name="set_avatar">Set avatar..</string>
+    
+    
+	<!-- friend add activity -->
+	<string name="friend_search_title">Add Friend</string>
+	<string name="search_title">Search</string>
+	<string name="results_title">Results</string>
+    <string name="friend_search_desc">Username, Name or Email</string>
+    <string name="friend_search_text">Searching..</string>
+    <string name="no_results">Nothing found..</string>
+    <string name="add_yourself">Cannot add yourself as a friend.</string>
+    <string name="requested_friendship">Requested friendship to %s ..</string>
+    
+    
+    <!-- login activity  -->
+    <string name="login">Login</string>
+    <string name="login_title">Connect</string>
+    <string name="username">Username:</string>
+    <string name="password">Password:</string>
+    <string name="connect">Connect</string>
+    <string name="rememberLogin"> Remember login</string>
+    <string name="autoLogin"> Automatically login</string>
+    <string name="login_text">Connecting to the server.. \nInitializing..</string>
+	<string name="login_help">Help</string>
+    
+    
+    
+    <!-- Main activity -->
+    <string name="home_map">Map</string>
+    <string name="home_friends">Friends</string>
+    <string name="home_nodes">Groups</string>
+    <string name="home_profile">Profile</string>
+    <string name="home_settings">Settings</string>
+    <string name="home_help">About</string>
+    
+ 	<string name="location_component_offline">The Location Component is not online.</string>
+ 
+    <!-- Main menu -->
+    <string name="menuLogin">Connect</string>
+    <string name="menuLogout">Logout</string>
+    <string name="menuFriends">Friends</string>
+    <string name="menuSettings">Settings</string>
+    <string name="menuExit">Exit</string>
+    
+    
+    
+    <!-- Main Map Activity  -->
+	<string name="main_map_title">Map</string>
+    
+    
+    
+    <!-- Node List Activity  -->
+    <string name="node_list_title">Sharing Groups</string>
+    
+    
+    
+    <!-- Profile activity  -->
+    <string name="fake_loc_title">Fake Location</string>
+    <string name="info_title">Info</string>
+ 	<string name="send_location">Send Location</string>
+ 	<string name="location_sent">Location sent to the server</string>
+ 	<string name="latitude">Latitude</string>
+ 	<string name="longitude">Longitude</string>
+ 	<string name="fake_loc_enabled">Enabled</string>
+ 	<string name="fake_loc_disabled">Disabled</string>
+ 	<string name="start_location_sharing">Start sharing</string>
+  	<string name="stop_location_sharing">Stop sharing</string>
+  	<string name="sharing_enabled">Location sharing enabled</string>
+  	<string name="sharing_disabled">Location sharing disabled</string>
+  	
+  	
+  	
+  	<!-- register activity  -->
+    <string name="register_title">Register</string>
+    <string name="login_info_title">Login info</string>
+    <string name="reg_username">UserName:</string>
+    <string name="reg_password">Password:</string>
+    <string name="reg_password_again">Confirm Password:</string>
+    <string name="reg_email">Email:</string>
+    <string name="reg_name">Full Name:</string>
+    <string name="register">Register</string>
+    <string name="additional_info_title">Additional info</string>
+    <string name="reg_text">Creating account..</string>
+    <string name="reg_success_msg">Registered! You can now login.</string>
+    <string name="err_pass_mismatch">Password Mismatch</string> 
+    <string name="err_missing">Please fill in all fields..</string> 
+    
+    
+    
+    <!-- settings activity  -->
+  	<string name="settings_title">Settings</string>
+  	<string name="server_title">Server</string>
+  	<string name="server_address">Address:</string>
+  	<string name="server_port">Port:</string>
+  	<string name="server_name">Name:</string>
+  	<string name="my_location_title">Location timers</string>
+  	<string name="refresh_delay">Refresh delay (seconds):</string>
+  	<string name="delivery_delay">Delivery delay (seconds):</string>
+  	<string name="network">Network</string>
+  	<string name="push_notif">Push notifications</string>
+  	<string name="push_notif_checked">Receive locations automatically</string>
+  	<string name="push_notif_unchecked">Manual locations update</string>
+  	<string name="send_loc">Location delivery</string>
+  	<string name="send_loc_checked">Share location</string>
+  	<string name="send_loc_unchecked">Receive only</string>
+  	<string name="stats_title">Statistics</string>
+  	<string name="stats_send">Send usage data</string>
+  	<string name="stats_send_checked">Enabled</string>
+  	<string name="stats_send_unchecked">Disabled</string>
+  	<string name="store_history">Keep location history</string>
+  	<string name="store_history_checked">Enabled</string>
+  	<string name="store_history_unchecked">Disabled</string>
+  	
+  	
+  	<string name="reset">Reset to Default</string>
+  	<string name="saved">Settings saved. To apply some of the changes you will have to reconnect.</string>
+
+	<string name="titleBar">titleBar</string>
+	
+    <!-- service  -->
+    <string name="remote_service_label">LoSha: Location Sharing</string>
+    <string name="remote_service_label2">LoSha: by Stefano Pongelli</string>
+</resources>

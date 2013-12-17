@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	  xmlns:android="http://schemas.android.com/apk/res/android"
+	  xmlns:losha= "http://schemas.android.com/apk/res/ch.usi.inf.bp.losha"
+	  android:layout_width="match_parent"
+	  android:layout_height="match_parent"
+	  android:orientation="vertical"
+	  android:id="@+id/mainLayout">
+  
+      <LinearLayout style="@style/TitleBar">
+        <ImageButton style="@style/TitleBarAction"
+            android:src="@drawable/title_home"
+            android:onClick="onHomeClick" />
+            
+        <ImageView style="@style/TitleBarSeparator" />
+        <TextView style="@style/TitleBarText" android:id="@+id/title_text"/>
+        
+        <ImageView style="@style/TitleBarSeparator" />
+        <RelativeLayout android:layout_width="@dimen/title_height"
+        				android:layout_height="wrap_content">
+	      
+	       			  
+	        <ImageButton style="@style/TitleBarAction"
+	            android:src="@drawable/title_mail"
+	            android:onClick="onNotifClick" 
+	            android:id="@+id/btnNotif"/>
+        
+        	<TextView android:id="@+id/notif_num"
+	       			  android:layout_width="wrap_content"
+	       			  android:layout_height="wrap_content"
+	       			  android:gravity="right"
+	       			  android:text="19"
+	       			  android:layout_margin="5dip"
+	       			  android:paddingLeft="2dip"
+	       			  android:paddingRight="2dip"
+	       			  android:textColor="#FFFFFF"
+	       			  android:textStyle="bold"
+	       			  android:layout_alignParentRight="true"
+	       			  android:layout_alignParentTop="true"/>
+	       			  
+        </RelativeLayout>
+        <ImageView style="@style/TitleBarSeparator" />
+        <ImageButton style="@style/TitleBarAction"
+            android:src="@drawable/title_add_friend"
+            android:onClick="onSearchClick" />
+    </LinearLayout>
+    
+    <ListView  
+         android:id="@android:id/list"
+         android:layout_width="fill_parent" 
+         android:layout_height="fill_parent"  />
+</LinearLayout>

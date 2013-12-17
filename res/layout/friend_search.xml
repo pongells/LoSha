@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	  xmlns:android="http://schemas.android.com/apk/res/android"
+	  xmlns:losha= "http://schemas.android.com/apk/res/ch.usi.inf.bp.losha"
+	  android:layout_width="match_parent"
+	  android:layout_height="match_parent"
+	  android:orientation="vertical"
+	  android:id="@+id/mainLayout">
+  
+	<LinearLayout style="@style/TitleBar">
+		<ImageButton style="@style/TitleBarAction"
+            android:src="@drawable/title_home"
+            android:onClick="onHomeClick" />
+            
+        <ImageView style="@style/TitleBarSeparator" />
+        <TextView style="@style/TitleBarText" android:id="@+id/title_text"/>
+    </LinearLayout>
+    
+	<ch.usi.inf.bp.losha.utils.SectionLabel 
+   			android:layout_width="fill_parent"
+   			android:layout_height="wrap_content"
+   			losha:text="@string/search_title" />
+   	
+   	<LinearLayout android:layout_width="fill_parent"
+   				  android:layout_height="wrap_content"
+   				  android:orientation="horizontal"
+   				  android:padding="@dimen/padding">
+   				  
+	 	<EditText android:id="@+id/search_friend"
+				  android:hint="@string/friend_search_desc"
+				  android:inputType="textNoSuggestions|textVisiblePassword"
+				  android:layout_weight="1"
+				  android:layout_height="wrap_content" 
+				  android:layout_width="match_parent"/>
+				
+		<ImageButton android:text="@string/search_title" 
+				android:id="@+id/searchButton"
+				android:src="@drawable/search"
+				android:layout_width="@dimen/title_height"
+				android:layout_height="@dimen/title_height"
+				android:layout_gravity="center_vertical|right"
+				android:scaleType="center"
+				android:onClick="onSearchClick"/>
+			
+    </LinearLayout>
+    
+   	<ch.usi.inf.bp.losha.utils.SectionLabel 
+   	 		losha:text="@string/results_title"
+   			android:layout_width="fill_parent"
+   			android:layout_height="wrap_content"/>
+   
+	<ListView android:id="@+id/search_result_list"
+			  android:layout_width="match_parent"
+			  android:layout_height="wrap_content" />
+			  
+	<TextView android:id="@+id/user_not_found_text"
+			  android:layout_width="match_parent"
+			  android:layout_height="wrap_content"
+			  android:text="@string/no_results"
+			  android:visibility="gone"/>
+			  
+</LinearLayout>

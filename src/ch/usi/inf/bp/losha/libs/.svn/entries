@@ -1,0 +1,37 @@
+10
+
+dir
+154
+svn+ssh://scipionm@atelier.inf.usi.ch/home/pongells/LoShaBP/LoShaBP/src/ch/usi/inf/bp/losha/libs
+svn+ssh://scipionm@atelier.inf.usi.ch/home/pongells/LoShaBP
+
+
+
+2011-05-27T19:46:10.284010Z
+147
+pongells
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8edfd109-b5c5-4286-9cb4-444520bf8918
+
+mergeadapter
+dir
+
+iso8601dateparser
+dir
+
+datetimepicker
+dir
+

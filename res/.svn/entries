@@ -1,0 +1,55 @@
+10
+
+dir
+154
+svn+ssh://scipionm@atelier.inf.usi.ch/home/pongells/LoShaBP/LoShaBP/res
+svn+ssh://scipionm@atelier.inf.usi.ch/home/pongells/LoShaBP
+
+
+
+2011-06-03T11:58:41.996464Z
+151
+pongells
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8edfd109-b5c5-4286-9cb4-444520bf8918
+
+values
+dir
+
+drawable
+dir
+
+drawable-hdpi
+dir
+
+anim
+dir
+
+menu
+dir
+
+drawable-ldpi
+dir
+
+drawable-mdpi
+dir
+
+layout-land
+dir
+
+layout
+dir
+

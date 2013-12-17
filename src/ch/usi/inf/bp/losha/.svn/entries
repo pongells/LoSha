@@ -1,0 +1,101 @@
+10
+
+dir
+154
+svn+ssh://scipionm@atelier.inf.usi.ch/home/pongells/LoShaBP/LoShaBP/src/ch/usi/inf/bp/losha
+svn+ssh://scipionm@atelier.inf.usi.ch/home/pongells/LoShaBP
+
+
+
+2011-06-10T11:02:25.097469Z
+152
+pongells
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8edfd109-b5c5-4286-9cb4-444520bf8918
+
+profile
+dir
+
+service
+dir
+
+settings
+dir
+
+utils
+dir
+
+MainActivity.java
+file
+
+
+
+
+2011-06-24T15:46:53.000000Z
+c5155cd280efaa76e8b0893b3de298c4
+2011-06-10T11:02:25.097469Z
+152
+pongells
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8504
+
+xmpp
+dir
+
+tasks
+dir
+
+nodes
+dir
+
+connect
+dir
+
+libs
+dir
+
+network
+dir
+
+about
+dir
+
+friends
+dir
+
+map
+dir
+
